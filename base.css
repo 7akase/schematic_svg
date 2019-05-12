@@ -1,0 +1,100 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: arial narrow;
+  margin: 0;
+}
+
+h6 {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  float: right;
+}
+
+p {
+  position: relative;
+  font-family: Meiryo UI;
+  font-size: 20px;
+}
+
+.img-left + p img {
+  padding-right: 50px;
+  float: left;
+  margin: 10px 10px 10px 0px
+}
+
+.img-right + p img {
+  padding-left: 50px;
+  float: right;
+  margin: 10px 0px 10px 10px;
+}
+
+.up-triangle{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid gray;
+}
+
+.down-triangle{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid gray;
+}
+
+.right-triangle{
+  width: 0;
+  height: 0;
+  border-left: 30px solid gray;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.left-triangle{
+  width: 0;
+  height: 0;
+  border-right: 30px solid gray;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+img.R90{
+  transform: rotate(-90deg);
+}
+img.R180{
+  transform: rotate(-180deg);
+}
+img.R270{
+  transform: rotate(-270deg);
+}
+img.MX{
+  transform: scale(-1,1);
+}
+img.MY{
+  transform: scale(1,-1);
+}
+img.MXR90{
+  transform: scaleX(-1) rotate(-90deg);
+}
+img.MXR180{
+  transform: scaleX(-1) rotate(-90deg);
+}
+img.MXR270{
+  transform: scaleX(-1) rotate(-90deg);
+}
+img.MYR90{
+  transform: scaleY(-1) rotate(-90deg);
+}
+img.MYR180{
+  transform: scaleY(-1) rotate(-90deg);
+}
+img.MYR270{
+  transform: scaleY(-1) rotate(-90deg);
+}
+
+div.simple + table td, div.simple + table tr {
+  border-style: none;
+  padding: 0;
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls {
+        stroke: #888;
+        fill: none;
+        stroke-width: 3;
+      }
+    </style>
+  </defs>
+  <path id="arrow" data-name="shape" class="cls"
+    d = "M40.0,5.0L19.4,68.3L73.3,29.2L6.7,29.2L60.6,68.3L40.0,5.0Z"
+  />
+</svg>

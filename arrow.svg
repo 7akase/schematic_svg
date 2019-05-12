@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls {
+        stroke: #888;
+        fill: none;
+        stroke-width: 3;
+      }
+    </style>
+  </defs>
+  <path id="arrow" data-name="shape" class="cls"
+        d=" M18,40 v-20 H40 v-15 L70,40
+            M18,40 v 20 H40 v 15 L70,40"/>
+</svg>

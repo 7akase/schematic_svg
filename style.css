@@ -1,0 +1,8 @@
+.inst_normal {
+    stroke: #000;
+    fill: none;
+    stroke-width: 0.05;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }

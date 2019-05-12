@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="auto" viewBox="0 0 200 200" id="main">
+
+  <use id="M0" xlink:href="#nmosR0" class="normal" x=" 40" y="100" />
+  <use id="M1" xlink:href="#nmosR0" class="normal" x=" 20" y=" 60" />
+  <use id="M2" xlink:href="#nmosMY" class="normal" x=" 60" y=" 60" />
+  <use id="M3" xlink:href="#pmosMY" class="normal" x=" 20" y=" 20" />
+  <use id="M4" xlink:href="#pmosR0" class="normal" x=" 60" y=" 20" />
+  <use id="M5" xlink:href="#nmosR0" class="normal" x="140" y="100" />
+  <use id="M6" xlink:href="#pmosR0" class="normal" x="140" y=" 20" />
+  <use id="Cc" xlink:href="#capR90" class="normal" x="120" y="55" />
+  <path id="cs" data-name="shape" class="normal" d="M40,100 l40,0" />
+  <path id="out" data-name="shape" class="normal" d="M160,100 l0,-40 m0,20 l20,0" />
+  <path id="dpo" data-name="shape" class="normal" d="M80,60 l40,0 m0,15 l0,-15 l0,-20 l20,0" />
+  <path id="dio" data-name="shape" class="normal" d="M40,60 l20,0 l0,-20" />
+  <path id="vbn" class="normal" d="M20,120 l120,0" />
+  <path id="pwr" data-name="shape" class="thick" d="M30,20 l140,0" />
+  <path id="gnd" data-name="shape" class="thick" d="M30,140 l140,0" />
+  <text class="label" x="10" y="75"> inn </text>
+  <text class="label" x="95" y="75"> inp </text>
+  <text class="label" x="170" y="75"> out </text>
+  <text class="label" x="10" y="115"> vbn </text>
+
+  <defs>
+    <style>
+        .normal {
+          data-name: shape;
+          stroke: #000;
+          fill: none;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        .thick {
+          stroke: #000;
+          fill: none;
+          stroke-width: 4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        .thin {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        .label {
+          font-family: Arial Narrow;
+          font-size: 10pt;
+        }
+    </style>
+
+    <symbol id="pmos" vector-effect="non-scaling-stroke">
+      <path id="ds" data-name="shape" d="M20,0 l0,12 l-8,0 l0,16 l8,0 l0,12" />
+      <path id="g" data-name="shape" d="M8,12 l0,16" />
+      <path id="node" data-name="shape" d="M0,20 l8,0" />
+      <path id="arrow" data-name="shape" d="M16,9 l-4,3 l4,3" />
+    </symbol>
+
+    <g id="nmos" vector-effect="non-scaling-stroke">
+      <path id="ds" data-name="shape" d="M20,0 l0,12 l-8,0 l0,16 l8,0 l0,12" />
+      <path id="g" data-name="shape" d="M8,12 l0,16" />
+      <path id="node" data-name="shape" d="M0,20 l8,0" />
+      <path id="arrow" data-name="shape" d="M16,25 l4,3 l-4,3" />
+    </g>
+
+    <symbol id="nmosR0">
+      <use xlink:href="#nmos" />
+    </symbol>
+    <symbol id="nmosR90">
+      <use xlink:href="#nmos" transform="rotate(-90,20,20)"/>
+    </symbol>
+    <symbol id="nmosR180">
+      <use xlink:href="#nmos" transform="rotate(-180,20,20)"/>
+    </symbol>
+    <symbol id="nmosR270">
+      <use xlink:href="#nmos" transform="rotate(-270,20,20)"/>
+    </symbol>
+    <symbol id="nmosMX">
+      <use xlink:href="#nmos" transform="translate(0,40) scale(1,-1) "/>
+    </symbol>
+    <symbol id="nmosMY">
+      <use xlink:href="#nmos" transform="translate(40,0) scale(-1,1) "/>
+    </symbol>
+
+    <symbol id="pmosR0">
+      <use xlink:href="#pmos" />
+    </symbol>
+    <symbol id="pmosR90">
+      <use xlink:href="#pmos" transform="rotate(-90,20,20)"/>
+    </symbol>
+    <symbol id="pmosR180">
+      <use xlink:href="#pmos" transform="rotate(-180,20,20)"/>
+    </symbol>
+    <symbol id="pmosR270">
+      <use xlink:href="#pmos" transform="rotate(-270,20,20)"/>
+    </symbol>
+    <symbol id="pmosMX">
+      <use xlink:href="#pmos" transform="translate(0,40) scale(1,-1) "/>
+    </symbol>
+    <symbol id="pmosMY">
+      <use xlink:href="#pmos" transform="translate(40,0) scale(-1,1) "/>
+    </symbol>
+
+    <symbol id="cap">
+      <path id="p" data-name="shape" d = "M20,0 l0,17 M20,40 l0,-16" />
+      <path id="tm" data-name="shape" d = "M13,17 h14" />
+      <path id="btm" data-name="shape" d = "M 13,25 a 14 14 -120 0 1 14,0" />
+    </symbol>
+    <symbol id="capR0">
+      <use xlink:href="#cap" />
+    </symbol>
+    <symbol id="capR90">
+      <use xlink:href="#cap" transform="rotate(-90,20,20)"/>
+    </symbol>
+    <symbol id="capR180">
+      <use xlink:href="#cap" transform="rotate(-180,20,20)"/>
+    </symbol>
+    <symbol id="capR270">
+      <use xlink:href="#cap" transform="rotate(-270,20,20)"/>
+    </symbol>
+    <symbol id="capMX">
+      <use xlink:href="#cap" transform="translate(0,40) scale(1,-1) "/>
+    </symbol>
+    <symbol id="capMY">
+      <use xlink:href="#cap" transform="translate(40,0) scale(-1,1) "/>
+    </symbol>
+  </defs>
+
+</svg>
